@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" width="400" height="460">
+  <defs>
+    <linearGradient id="bodyFleet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="30%" stop-color="#334155"/>
+      <stop offset="70%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <ellipse cx="200" cy="442" rx="145" ry="16" fill="#000000" opacity="0.25" filter="blur(6px)"/>
+  <g filter="url(#dropShadow)">
+    <rect x="70" y="80" width="260" height="340" rx="28" fill="url(#bodyFleet)" stroke="#475569" stroke-width="2"/>
+    <path d="M 140,80 L 140,46 C 140,36 150,30 160,30 L 240,30 C 250,30 260,36 260,46 L 260,80 Z" fill="#334155" stroke="#475569" stroke-width="2"/>
+    <rect x="165" y="44" width="70" height="20" rx="10" fill="#F8FAFC"/>
+    <rect x="90" y="55" width="34" height="26" rx="4" fill="#EAB308"/>
+    <g transform="translate(100, 140)">
+      <rect x="0" y="0" width="200" height="230" rx="8" fill="#FFFFFF" stroke="#CA8A04" stroke-width="2"/>
+      <rect x="0" y="0" width="200" height="42" rx="7" fill="#713F12"/>
+      <text x="100" y="26" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800" fill="#FFFFFF" letter-spacing="2">
+        KARNI <tspan fill="#FACC15">FLEETCLEAN</tspan>
+      </text>
+      <rect x="20" y="48" width="160" height="18" rx="9" fill="#FEF9C3"/>
+      <text x="100" y="61" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="#854D0E">
+        HEAVY TRAFFIC FILM REMOVER
+      </text>
+      <text x="100" y="90" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="900" fill="#713F12">
+        COMMERCIAL FLEET
+      </text>
+      <text x="100" y="110" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="900" fill="#CA8A04">
+        &amp; TRUCK TFR WASH
+      </text>
+      <line x1="15" y1="122" x2="185" y2="122" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="20" y="138" font-family="sans-serif" font-size="8.5" font-weight="600" fill="#475569">• Dilution: 1:30 to 1:60</text>
+      <text x="20" y="152" font-family="sans-serif" font-size="8.5" font-weight="600" fill="#475569">• Touchless Traffic Film Removal</text>
+      <text x="20" y="166" font-family="sans-serif" font-size="8.5" font-weight="600" fill="#475569">• Dissolves Diesel Soot &amp; Mud</text>
+      <text x="20" y="180" font-family="sans-serif" font-size="8.5" font-weight="600" fill="#475569">• Pressure Wand &amp; Gantry Safe</text>
+      <rect x="125" y="190" width="65" height="24" rx="4" fill="#713F12"/>
+      <text x="157" y="206" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="800" fill="#FACC15">
+        20L <tspan font-size="8" font-weight="600" fill="#FFFFFF">BULK</tspan>
+      </text>
+      <rect x="0" y="220" width="200" height="10" rx="0 0 7 7" fill="#CA8A04"/>
+    </g>
+  </g>
+</svg>

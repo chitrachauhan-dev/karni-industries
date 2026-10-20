@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" width="400" height="460">
+  <defs>
+    <linearGradient id="carboyBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="30%" stop-color="#2563EB"/>
+      <stop offset="70%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1E40AF"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <ellipse cx="200" cy="442" rx="145" ry="16" fill="#000000" opacity="0.25" filter="blur(6px)"/>
+  <g filter="url(#dropShadow)">
+    <!-- 20L Heavy Duty Carboy Body -->
+    <rect x="70" y="80" width="260" height="340" rx="28" fill="url(#carboyBlue)" stroke="#1D4ED8" stroke-width="2"/>
+    <!-- Heavy Molded Top Handle -->
+    <path d="M 140,80 L 140,46 C 140,36 150,30 160,30 L 240,30 C 250,30 260,36 260,46 L 260,80 Z" fill="#1E40AF" stroke="#2563EB" stroke-width="2"/>
+    <rect x="165" y="44" width="70" height="20" rx="10" fill="#F8FAFC"/>
+    <!-- Threaded Spout / Bung -->
+    <rect x="90" y="55" width="34" height="26" rx="4" fill="#0F172A"/>
+    <!-- Label -->
+    <g transform="translate(100, 140)">
+      <rect x="0" y="0" width="200" height="230" rx="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+      <rect x="0" y="0" width="200" height="42" rx="7" fill="#172554"/>
+      <text x="100" y="26" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800" fill="#FFFFFF" letter-spacing="2">
+        KARNI <tspan fill="#60A5FA">OXYWASH</tspan>
+      </text>
+      <rect x="20" y="48" width="160" height="18" rx="9" fill="#DBEAFE"/>
+      <text x="100" y="61" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="#1E40AF">
+        COMMERCIAL LAUNDRY DETERGENT
+      </text>
+      <text x="100" y="90" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="900" fill="#172554">
+        ENZYMATIC LIQUID
+      </text>
+      <text x="100" y="110" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="900" fill="#2563EB">
+        LAUNDRY DETERGENT
+      </text>
+      <line x1="15" y1="122" x2="185" y2="122" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="20" y="138" font-family="sans-serif" font-size="8.5" font-weight="600" fill="#475569">• Dose: 4ml - 8ml per 1kg Linen</text>
+      <text x="20" y="152" font-family="sans-serif" font-size="8.5" font-weight="600" fill="#475569">• Low Temp Active at 35°C</text>
+      <text x="20" y="166" font-family="sans-serif" font-size="8.5" font-weight="600" fill="#475569">• High Optical Brightener Yield</text>
+      <text x="20" y="180" font-family="sans-serif" font-size="8.5" font-weight="600" fill="#475569">• Peristaltic Dosing Pump Ready</text>
+      <rect x="125" y="190" width="65" height="24" rx="4" fill="#172554"/>
+      <text x="157" y="206" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="800" fill="#60A5FA">
+        20L <tspan font-size="8" font-weight="600" fill="#FFFFFF">BULK</tspan>
+      </text>
+      <rect x="0" y="220" width="200" height="10" rx="0 0 7 7" fill="#2563EB"/>
+    </g>
+  </g>
+</svg>

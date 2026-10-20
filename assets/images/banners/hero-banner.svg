@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="heroDarkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07121E"/>
+      <stop offset="40%" stop-color="#0B1E33"/>
+      <stop offset="80%" stop-color="#0F2D4C"/>
+      <stop offset="100%" stop-color="#07192C"/>
+    </linearGradient>
+
+    <!-- Glowing Cyan Accents -->
+    <linearGradient id="cyanBeam" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0077B6" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Stainless Steel Vats Gradients -->
+    <linearGradient id="vatMetal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="25%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#94A3B8"/>
+      <stop offset="75%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="vatHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ADB5" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00ADB5" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Liquid in Sightglass -->
+    <linearGradient id="liquidCyan" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0096C7"/>
+      <stop offset="100%" stop-color="#48CAE4"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="chemGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00ADB5" stroke-width="0.7" opacity="0.12"/>
+      <circle cx="0" cy="0" r="1.5" fill="#00E5FF" opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <!-- Deep Industrial Canvas -->
+  <rect width="1200" height="600" fill="url(#heroDarkBg)"/>
+  <rect width="1200" height="600" fill="url(#chemGrid)"/>
+
+  <!-- Ambient Light Cones & Volumetric Beams -->
+  <polygon points="200,0 450,0 650,600 150,600" fill="url(#cyanBeam)" opacity="0.18"/>
+  <polygon points="750,0 1100,0 1200,600 900,600" fill="url(#cyanBeam)" opacity="0.12"/>
+
+  <!-- Industrial Facility Silhouettes & Mixing Tanks -->
+  <!-- Overhead Gantry Pipe Network -->
+  <g stroke="#334155" stroke-width="8" fill="none" opacity="0.7">
+    <path d="M 0,90 L 1200,90"/>
+    <path d="M 0,115 L 1200,115" stroke-width="4"/>
+    <path d="M 400,90 L 400,240 L 460,240"/>
+    <path d="M 720,90 L 720,200 L 780,200"/>
+    <path d="M 980,90 L 980,260"/>
+  </g>
+
+  <!-- High-Precision Industrial Reaction Vats (Right Side Showcase) -->
+  <!-- Vat 1: Large Central Formulation Vessel -->
+  <g transform="translate(740, 150)">
+    <!-- Main Tank Body -->
+    <rect x="0" y="50" width="220" height="340" rx="20" fill="url(#vatMetal)"/>
+    <rect x="0" y="50" width="220" height="340" rx="20" fill="url(#vatHighlight)"/>
+    <!-- Dome Top -->
+    <ellipse cx="110" cy="50" rx="110" ry="30" fill="#334155" stroke="#64748B" stroke-width="2"/>
+    <!-- Motor / Agitator on Top -->
+    <rect x="85" y="0" width="50" height="40" rx="6" fill="#0F172A" stroke="#00ADB5" stroke-width="2"/>
+    <rect x="95" y="40" width="30" height="15" fill="#475569"/>
+    <!-- Base Support Legs -->
+    <rect x="20" y="380" width="25" height="70" fill="#1E293B"/>
+    <rect x="175" y="380" width="25" height="70" fill="#1E293B"/>
+    <!-- Sightglass Column with Translucent Cyan Liquid -->
+    <rect x="190" y="110" width="16" height="220" rx="8" fill="#0A192F" stroke="#00ADB5" stroke-width="2"/>
+    <rect x="193" y="150" width="10" height="175" rx="5" fill="url(#liquidCyan)"/>
+    <!-- Pressure Gauges & Valve Dials -->
+    <circle cx="50" cy="120" r="18" fill="#0F172A" stroke="#E2E8F0" stroke-width="3"/>
+    <circle cx="50" cy="120" r="14" fill="#FFFFFF"/>
+    <line x1="50" y1="120" x2="60" y2="114" stroke="#DC2626" stroke-width="2"/>
+    <text x="50" y="129" font-family="sans-serif" font-size="6" text-anchor="middle" fill="#0F172A">PSI</text>
+    <!-- Digital Process Indicator -->
+    <rect x="30" y="170" width="70" height="32" rx="4" fill="#000000" stroke="#00ADB5" stroke-width="1.5"/>
+    <text x="65" y="190" font-family="'Space Grotesk', monospace" font-size="13" font-weight="700" text-anchor="middle" fill="#00E5FF">
+      99.8% QC
+    </text>
+  </g>
+
+  <!-- Vat 2: Background Secondary Mixing Vessel -->
+  <g transform="translate(560, 200)" opacity="0.85">
+    <rect x="0" y="40" width="150" height="260" rx="15" fill="url(#vatMetal)"/>
+    <ellipse cx="75" cy="40" rx="75" ry="22" fill="#334155"/>
+    <rect x="58" y="5" width="34" height="30" rx="4" fill="#0F172A" stroke="#64748B"/>
+    <rect x="15" y="290" width="18" height="60" fill="#1E293B"/>
+    <rect x="117" y="290" width="18" height="60" fill="#1E293B"/>
+  </g>
+
+  <!-- Vat 3: Far Right Vessel -->
+  <g transform="translate(990, 180)" opacity="0.9">
+    <rect x="0" y="40" width="170" height="290" rx="16" fill="url(#vatMetal)"/>
+    <ellipse cx="85" cy="40" rx="85" ry="24" fill="#334155"/>
+    <rect x="68" y="2" width="34" height="34" rx="4" fill="#0F172A"/>
+    <rect x="18" y="320" width="20" height="60" fill="#1E293B"/>
+    <rect x="132" y="320" width="20" height="60" fill="#1E293B"/>
+  </g>
+
+  <!-- Automated Conveyor Bottling Line at Bottom -->
+  <g transform="translate(480, 480)">
+    <!-- Stainless Conveyor Track -->
+    <rect x="0" y="45" width="720" height="18" rx="4" fill="#334155" stroke="#64748B" stroke-width="2"/>
+    <rect x="0" y="52" width="720" height="4" fill="#00ADB5" opacity="0.6"/>
+    <!-- Conveyor Support Rollers -->
+    <circle cx="80" cy="54" r="8" fill="#1E293B"/>
+    <circle cx="200" cy="54" r="8" fill="#1E293B"/>
+    <circle cx="340" cy="54" r="8" fill="#1E293B"/>
+    <circle cx="480" cy="54" r="8" fill="#1E293B"/>
+    <circle cx="620" cy="54" r="8" fill="#1E293B"/>
+
+    <!-- Processed Chemical Canisters on Conveyor -->
+    <!-- Canister 1 -->
+    <g transform="translate(40, -40) scale(0.24)">
+      <rect x="0" y="0" width="180" height="260" rx="16" fill="#0077B6"/>
+      <rect x="30" y="-30" width="40" height="30" fill="#00B4D8"/>
+      <rect x="20" y="40" width="140" height="160" fill="#FFFFFF"/>
+    </g>
+    <!-- Canister 2 -->
+    <g transform="translate(130, -40) scale(0.24)">
+      <rect x="0" y="0" width="180" height="260" rx="16" fill="#059669"/>
+      <rect x="30" y="-30" width="40" height="30" fill="#10B981"/>
+      <rect x="20" y="40" width="140" height="160" fill="#FFFFFF"/>
+    </g>
+    <!-- Canister 3 -->
+    <g transform="translate(220, -40) scale(0.24)">
+      <rect x="0" y="0" width="180" height="260" rx="16" fill="#0284C7"/>
+      <rect x="30" y="-30" width="40" height="30" fill="#38BDF8"/>
+      <rect x="20" y="40" width="140" height="160" fill="#FFFFFF"/>
+    </g>
+    <!-- Canister 4 -->
+    <g transform="translate(310, -40) scale(0.24)">
+      <rect x="0" y="0" width="180" height="260" rx="16" fill="#DC2626"/>
+      <rect x="30" y="-30" width="40" height="30" fill="#EF4444"/>
+      <rect x="20" y="40" width="140" height="160" fill="#FFFFFF"/>
+    </g>
+    <!-- Canister 5 -->
+    <g transform="translate(400, -40) scale(0.24)">
+      <rect x="0" y="0" width="180" height="260" rx="16" fill="#D97706"/>
+      <rect x="30" y="-30" width="40" height="30" fill="#F59E0B"/>
+      <rect x="20" y="40" width="140" height="160" fill="#FFFFFF"/>
+    </g>
+    <!-- Canister 6 -->
+    <g transform="translate(490, -40) scale(0.24)">
+      <rect x="0" y="0" width="180" height="260" rx="16" fill="#0D9488"/>
+      <rect x="30" y="-30" width="40" height="30" fill="#14B8A6"/>
+      <rect x="20" y="40" width="140" height="160" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- Left Side: Molecular Structure & Precision Graphic Overlay -->
+  <g opacity="0.35" transform="translate(40, 120)">
+    <!-- Hexagonal Benzene Ring Network -->
+    <polygon points="120,40 160,63 160,109 120,132 80,109 80,63" fill="none" stroke="#00E5FF" stroke-width="2.5"/>
+    <circle cx="120" cy="86" r="24" fill="none" stroke="#00E5FF" stroke-width="1.8" stroke-dasharray="4,4"/>
+    
+    <line x1="160" y1="86" x2="220" y2="86" stroke="#00E5FF" stroke-width="2.5"/>
+    <polygon points="260,40 300,63 300,109 260,132 220,109 220,63" fill="none" stroke="#00E5FF" stroke-width="2.5"/>
+
+    <line x1="120" y1="132" x2="120" y2="180" stroke="#00E5FF" stroke-width="2.5"/>
+    <polygon points="120,180 160,203 160,249 120,272 80,249 80,203" fill="none" stroke="#00E5FF" stroke-width="2.5"/>
+
+    <!-- Nodes with glow -->
+    <circle cx="120" cy="40" r="5" fill="#F59E0B"/>
+    <circle cx="160" cy="63" r="4" fill="#00E5FF"/>
+    <circle cx="160" cy="109" r="4" fill="#00E5FF"/>
+    <circle cx="120" cy="132" r="5" fill="#F59E0B"/>
+    <circle cx="80" cy="109" r="4" fill="#00E5FF"/>
+    <circle cx="80" cy="63" r="4" fill="#00E5FF"/>
+    <circle cx="300" cy="63" r="4" fill="#00E5FF"/>
+    <circle cx="300" cy="109" r="4" fill="#00E5FF"/>
+  </g>
+
+  <!-- Technical Overlay Labels -->
+  <g transform="translate(60, 520)" opacity="0.8">
+    <rect x="0" y="0" width="340" height="38" rx="6" fill="#08182B" stroke="#00B4D8" stroke-width="1"/>
+    <circle cx="20" cy="19" r="4" fill="#10B981"/>
+    <text x="35" y="24" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" letter-spacing="1">
+      BATCH INTEGRITY SYSTEM: <tspan fill="#00E5FF">AUTOMATED &amp; ISO 9001:2015</tspan>
+    </text>
+  </g>
+</svg>

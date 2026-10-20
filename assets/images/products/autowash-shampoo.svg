@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" width="400" height="460">
+  <defs>
+    <linearGradient id="bodyRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="30%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="cherryLiquid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#991B1B"/>
+      <stop offset="35%" stop-color="#DC2626"/>
+      <stop offset="70%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#7F1D1D"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <ellipse cx="200" cy="442" rx="140" ry="16" fill="#000000" opacity="0.18" filter="blur(6px)"/>
+  <g filter="url(#dropShadow)">
+    <path d="M 120,72 C 120,62 132,54 146,54 L 254,54 C 268,54 280,62 280,72 L 288,102 C 292,116 304,126 318,130 L 326,134 C 334,138 340,146 340,156 L 340,404 C 340,418 328,430 314,430 L 86,430 C 72,430 60,418 60,404 L 60,156 C 60,146 66,138 74,134 L 82,130 C 96,126 108,116 112,102 Z" fill="url(#bodyRed)" stroke="#94A3B8" stroke-width="1.5"/>
+    <path d="M 64,185 Q 200,180 336,185 L 336,400 C 336,414 326,424 312,424 L 88,424 C 74,424 64,414 64,400 Z" fill="url(#cherryLiquid)" opacity="0.92"/>
+    <path d="M 148,82 L 252,82 C 260,82 266,88 266,96 C 266,108 258,118 248,118 L 152,118 C 142,118 134,108 134,96 C 134,88 140,82 148,82 Z" fill="#FEF2F2" stroke="#FECACA"/>
+    <rect x="94" y="42" width="36" height="16" fill="#991B1B"/>
+    <rect x="88" y="24" width="48" height="22" rx="4" fill="#DC2626"/>
+    <g transform="translate(112, 160)">
+      <rect x="0" y="0" width="208" height="245" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="2"/>
+      <rect x="0" y="0" width="208" height="42" rx="7" fill="#450A0A"/>
+      <text x="104" y="26" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800" fill="#FFFFFF" letter-spacing="2">
+        KARNI <tspan fill="#F87171">AUTOWASH</tspan>
+      </text>
+      <rect x="24" y="48" width="160" height="18" rx="9" fill="#FEE2E2"/>
+      <text x="104" y="61" text-anchor="middle" font-family="sans-serif" font-size="8.5" font-weight="700" fill="#991B1B">
+        pH-NEUTRAL SNOW FOAM
+      </text>
+      <text x="104" y="90" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="900" fill="#450A0A">
+        HIGH-FOAMING
+      </text>
+      <text x="104" y="110" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="900" fill="#DC2626">
+        VEHICLE SHAMPOO
+      </text>
+      <line x1="20" y1="122" x2="188" y2="122" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="24" y="138" font-family="sans-serif" font-size="9" font-weight="600" fill="#475569">• Dilution: 1:10 Foam / 1:100 Wash</text>
+      <text x="24" y="152" font-family="sans-serif" font-size="9" font-weight="600" fill="#475569">• Dense Shaving-Cream Suds</text>
+      <text x="24" y="166" font-family="sans-serif" font-size="9" font-weight="600" fill="#475569">• Safe for Ceramic Coat &amp; PPF</text>
+      <text x="24" y="180" font-family="sans-serif" font-size="9" font-weight="600" fill="#475569">• Infused Carnauba Wax Shine</text>
+      <rect x="135" y="194" width="60" height="24" rx="4" fill="#450A0A"/>
+      <text x="165" y="210" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="800" fill="#F87171">
+        5L <tspan font-size="9" font-weight="600" fill="#FFFFFF">NET</tspan>
+      </text>
+      <rect x="0" y="233" width="208" height="12" rx="0 0 7 7" fill="#DC2626"/>
+    </g>
+  </g>
+</svg>

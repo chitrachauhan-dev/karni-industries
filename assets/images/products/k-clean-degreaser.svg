@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" width="400" height="460">
+  <defs>
+    <!-- Lighting and Shading Gradients -->
+    <linearGradient id="bodyBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0E3A68"/>
+      <stop offset="25%" stop-color="#195493"/>
+      <stop offset="65%" stop-color="#2470B8"/>
+      <stop offset="85%" stop-color="#1B5596"/>
+      <stop offset="100%" stop-color="#0D2E54"/>
+    </linearGradient>
+    <linearGradient id="handleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2B76BF"/>
+      <stop offset="50%" stop-color="#184C82"/>
+      <stop offset="100%" stop-color="#0E335B"/>
+    </linearGradient>
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D1E30"/>
+      <stop offset="40%" stop-color="#253A52"/>
+      <stop offset="70%" stop-color="#1E2E42"/>
+      <stop offset="100%" stop-color="#0A1522"/>
+    </linearGradient>
+    <linearGradient id="specularGrip" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Oval Shadow -->
+  <ellipse cx="200" cy="442" rx="140" ry="16" fill="#000000" opacity="0.22" filter="blur(6px)"/>
+
+  <!-- Canister Group -->
+  <g filter="url(#dropShadow)">
+    <!-- Main Jug Body Silhouette with integrated handle -->
+    <path d="M 120,72 
+             C 120,62 132,54 146,54 
+             L 254,54 
+             C 268,54 280,62 280,72 
+             L 288,102 
+             C 292,116 304,126 318,130 
+             L 326,134 
+             C 334,138 340,146 340,156 
+             L 340,404 
+             C 340,418 328,430 314,430 
+             L 86,430 
+             C 72,430 60,418 60,404 
+             L 60,156 
+             C 60,146 66,138 74,134 
+             L 82,130 
+             C 96,126 108,116 112,102 Z" 
+          fill="url(#bodyBlue)" />
+
+    <!-- Handle Cutout Opening -->
+    <path d="M 148,82 
+             L 252,82 
+             C 260,82 266,88 266,96 
+             C 266,108 258,118 248,118 
+             L 152,118 
+             C 142,118 134,108 134,96 
+             C 134,88 140,82 148,82 Z" 
+          fill="#F8FAFC" opacity="0.98"/>
+
+    <!-- Handle Grip Ridges -->
+    <g fill="#0B233D" opacity="0.4">
+      <rect x="165" y="58" width="6" height="18" rx="2"/>
+      <rect x="178" y="58" width="6" height="18" rx="2"/>
+      <rect x="191" y="58" width="6" height="18" rx="2"/>
+      <rect x="204" y="58" width="6" height="18" rx="2"/>
+      <rect x="217" y="58" width="6" height="18" rx="2"/>
+      <rect x="230" y="58" width="6" height="18" rx="2"/>
+    </g>
+
+    <!-- Screw Cap Neck & Cap -->
+    <!-- Neck -->
+    <rect x="94" y="42" width="36" height="16" fill="#123B64"/>
+    <!-- Threaded Cap -->
+    <rect x="88" y="24" width="48" height="22" rx="4" fill="url(#capGrad)"/>
+    <!-- Cap Knurling Lines -->
+    <g stroke="#3A536F" stroke-width="1.8">
+      <line x1="93" y1="26" x2="93" y2="44"/>
+      <line x1="99" y1="26" x2="99" y2="44"/>
+      <line x1="105" y1="26" x2="105" y2="44"/>
+      <line x1="111" y1="26" x2="111" y2="44"/>
+      <line x1="117" y1="26" x2="117" y2="44"/>
+      <line x1="123" y1="26" x2="123" y2="44"/>
+      <line x1="129" y1="26" x2="129" y2="44"/>
+    </g>
+
+    <!-- Volume Gauge Strip on left side -->
+    <rect x="74" y="160" width="8" height="240" rx="3" fill="#0A223B"/>
+    <rect x="76" y="220" width="4" height="176" rx="2" fill="#F59E0B" opacity="0.9"/>
+    <!-- Level Ticks -->
+    <line x1="82" y1="180" x2="88" y2="180" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+    <text x="91" y="183" font-family="sans-serif" font-size="8" fill="#FFFFFF" opacity="0.7">5L</text>
+    <line x1="82" y1="240" x2="88" y2="240" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+    <text x="91" y="243" font-family="sans-serif" font-size="8" fill="#FFFFFF" opacity="0.7">4L</text>
+    <line x1="82" y1="300" x2="88" y2="300" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+    <text x="91" y="303" font-family="sans-serif" font-size="8" fill="#FFFFFF" opacity="0.7">3L</text>
+    <line x1="82" y1="360" x2="88" y2="360" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+    <text x="91" y="363" font-family="sans-serif" font-size="8" fill="#FFFFFF" opacity="0.7">2L</text>
+
+    <!-- Center Product Label -->
+    <g transform="translate(112, 160)">
+      <!-- Label Baseplate -->
+      <rect x="0" y="0" width="208" height="245" rx="8" fill="#FFFFFF" stroke="#00B4D8" stroke-width="2"/>
+      
+      <!-- Top Brand Header Bar -->
+      <rect x="0" y="0" width="208" height="42" rx="7" fill="#0B192C"/>
+      <text x="104" y="26" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" letter-spacing="2">
+        KARNI <tspan fill="#00B4D8">K-CLEAN</tspan>
+      </text>
+
+      <!-- Category Pill -->
+      <rect x="24" y="48" width="160" height="18" rx="9" fill="#FEF3C7"/>
+      <text x="104" y="61" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#D97706" letter-spacing="0.5">
+        CITRUS SOLVENT DEGREASER
+      </text>
+
+      <!-- Main Title -->
+      <text x="104" y="90" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="900" fill="#0F172A">
+        HD INDUSTRIAL
+      </text>
+      <text x="104" y="110" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="900" fill="#F59E0B">
+        DEGREASER
+      </text>
+
+      <!-- Spec Badges -->
+      <line x1="20" y1="122" x2="188" y2="122" stroke="#E2E8F0" stroke-width="1"/>
+      
+      <text x="24" y="138" font-family="sans-serif" font-size="9" font-weight="600" fill="#475569">• Dilution: 1:10 to 1:40</text>
+      <text x="24" y="152" font-family="sans-serif" font-size="9" font-weight="600" fill="#475569">• pH: 10.5 - 11.5 Alkaline</text>
+      <text x="24" y="166" font-family="sans-serif" font-size="9" font-weight="600" fill="#475569">• Natural D-Limonene Base</text>
+      <text x="24" y="180" font-family="sans-serif" font-size="9" font-weight="600" fill="#475569">• Rapid Grease Penetration</text>
+
+      <!-- Miniature GHS Hazard Diamonds -->
+      <!-- Diamond 1: Flammable -->
+      <g transform="translate(30, 192) scale(0.24)">
+        <polygon points="50,3 97,50 50,97 3,50" fill="#FFFFFF" stroke="#DC2626" stroke-width="8"/>
+        <path d="M 50,22 C 50,30 55,34 52,42 C 58,35 62,44 60,52 C 67,46 68,58 66,64 C 64,72 58,76 50,76 C 42,76 36,72 34,64 Z" fill="#1E293B"/>
+      </g>
+      <!-- Diamond 2: Corrosive -->
+      <g transform="translate(62, 192) scale(0.24)">
+        <polygon points="50,3 97,50 50,97 3,50" fill="#FFFFFF" stroke="#DC2626" stroke-width="8"/>
+        <path d="M 30,28 L 42,40 L 37,45 L 25,33 Z M 70,28 L 58,40 L 63,45 L 75,33 Z" fill="#1E293B"/>
+        <path d="M 22,64 L 46,64 L 44,69 Z M 52,70 C 52,66 56,64 62,64 L 76,64 Z" fill="#1E293B"/>
+      </g>
+      <!-- Diamond 3: Exclamation -->
+      <g transform="translate(94, 192) scale(0.24)">
+        <polygon points="50,3 97,50 50,97 3,50" fill="#FFFFFF" stroke="#DC2626" stroke-width="8"/>
+        <path d="M 46,26 L 54,26 L 52,56 L 48,56 Z" fill="#1E293B"/>
+        <circle cx="50" cy="69" r="6" fill="#1E293B"/>
+      </g>
+
+      <!-- Net Volume Badge -->
+      <rect x="135" y="194" width="60" height="24" rx="4" fill="#0B192C"/>
+      <text x="165" y="210" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="800" fill="#00B4D8">
+        5L <tspan font-size="9" font-weight="600" fill="#FFFFFF">NET</tspan>
+      </text>
+
+      <!-- Bottom Bar -->
+      <rect x="0" y="233" width="208" height="12" rx="0 0 7 7" fill="#00B4D8"/>
+    </g>
+
+    <!-- Specular Highlight Strip along right body edge -->
+    <path d="M 318,140 L 322,400" stroke="#FFFFFF" stroke-width="3" opacity="0.18" stroke-linecap="round"/>
+  </g>
+</svg>
