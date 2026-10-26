@@ -31,7 +31,7 @@ function initParticleCanvas() {
       this.vx = (Math.random() - 0.5) * 0.7;
       this.vy = (Math.random() - 0.5) * 0.7;
       this.radius = Math.random() * 2.2 + 1;
-      this.color = Math.random() > 0.4 ? 'rgba(0, 240, 255, ' : 'rgba(0, 255, 163, ';
+      this.color = Math.random() > 0.4 ? 'rgba(37, 99, 235, ' : 'rgba(21, 128, 61, ';
       this.alpha = Math.random() * 0.5 + 0.2;
     }
 
@@ -74,7 +74,7 @@ function initParticleCanvas() {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(0, 240, 255, ${0.15 * (1 - dist / 120)})`;
+          ctx.strokeStyle = `rgba(37, 99, 235, ${0.15 * (1 - dist / 120)})`;
           ctx.lineWidth = 0.8;
           ctx.stroke();
         }
@@ -110,11 +110,11 @@ function showToast(message, type = 'info') {
   
   let iconSvg = '';
   if (type === 'success') {
-    iconSvg = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00FFA3" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+    iconSvg = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>';
   } else if (type === 'error') {
     iconSvg = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF3366" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>';
   } else {
-    iconSvg = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>';
+    iconSvg = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>';
   }
 
   toast.innerHTML = `${iconSvg} <span>${message}</span>`;
